@@ -1,0 +1,30 @@
+model Movie {
+  id       Int      @id @default(autoincrement())
+  title    String
+  rating   Float
+  director Director @relation(fields: [directorId], references: [id])
+  directorId Int
+  producer Producer @relation(fields: [producerId], references: [id])
+  producerId Int
+}
+
+model Director {
+  id        Int      @id @default(autoincrement())
+  name      String
+  movies    Movie[]
+}
+
+model Producer {
+  id        Int      @id @default(autoincrement())
+  name      String
+  movies    Movie[]
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("mysql://root:password@localhost:3306/movie_listing")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}

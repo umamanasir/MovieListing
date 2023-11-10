@@ -1,0 +1,51 @@
+# Node.js
+node_modules/
+
+# TypeScript
+*.tsbuildinfo
+
+# Prisma
+/prisma/.client
+/prisma/.migration
+/prisma/client
+
+# Next.js
+.next/
+out/
+
+# IDE
+.idea/
+
+# Compiled CSS
+*.css
+
+# Build output
+/build/
+/dist/
+
+# Visual Studio Code
+.vscode/
+
+# npm package files
+package-lock.json
+yarn.lock
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variable files
+.env
+.env.local
+.env.*.local
+.env.test
+.env.test.local
