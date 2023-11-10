@@ -22,7 +22,7 @@ model Producer {
 
 datasource db {
   provider = "mysql"
-  url      = env("mysql://root:password@localhost:3306/movie_listing")
+  url      = env("DATABASE_URL")
 }
 
 generator client {
