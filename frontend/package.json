@@ -1,5 +1,5 @@
 {
-  "name": "my-movie-app",
+  "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,11 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@apollo/client": "^3.8.7",
-    "graphql": "^16.8.1",
     "next": "14.0.2",
+    "node-sass": "^9.0.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sass": "^1.69.5"
   },
   "devDependencies": {
     "@types/node": "^20",

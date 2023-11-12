@@ -1,0 +1,155 @@
+body {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin: 0;
+}
+
+// h1 {
+//   background: linear-gradient(90deg, rgb(147, 147, 216), rgb(222, 55, 83));
+//   -webkit-background-clip: text;
+//   color: transparent;
+//   margin-top: 50px;
+//   margin-left: 50px;
+// }
+
+.addButton {
+  background: linear-gradient(90deg, rgb(71, 71, 127), rgb(222, 55, 83));
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #3498db;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgb(208, 67, 90);
+  }
+
+  .plusIcon {
+    margin-left: 30px;
+    padding-left: 100px;
+  }
+}
+
+.navbarContainer {
+  display: flex;
+  background: linear-gradient(90deg, rgb(147, 147, 216), rgb(222, 55, 83));
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1px;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+
+  .navBarHeading {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .navBarbtn {
+    background-color: rgb(11, 11, 95);
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem;
+
+  }
+
+}
+
+.moviesList {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0.05rem 3rem 0.05rem 3rem;
+  // padding-right: 4rem;
+  border-style: slate;
+  border-color: rgb(61, 61, 149);
+  margin: 15px;
+  background: rgb(160, 160, 238);
+  border: 300px;
+  color: white;
+  gap: 5;
+
+  .movieContent {
+    .movieText {
+      font-weight: bold;
+      text-size-adjust: 2xl;
+    }
+
+    .movieDescription {
+      font: 1em sans-serif;
+      padding-bottom: 15px;
+    }
+  }
+
+  .movieBtns {
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px 20px 10px;
+    background-color: transparent;
+
+    .linkBtn {
+      padding-left: 10px;
+      color: rgb(255, 255, 255);
+
+      &:hover {
+        color: green;
+      }
+    }
+
+    .deleteBtn {
+      color: red;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+
+      &:hover {
+        color: darken($color: #000000, $amount: 0);
+      }
+
+
+
+
+    }
+  }
+
+}
+
+.layoutStyle {
+  max-width: 3xl;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem;
+}
+
+.formMovieName {
+  border: solid;
+  padding: 8px 2px 8px 2px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  gap: 6px;
+
+  .submitMovie {
+    background-color: green;
+    font-weight: bold;
+    color: white;
+    padding: 10px 5px 10px 5px;
+    width: fit-content;
+
+  }
+}
